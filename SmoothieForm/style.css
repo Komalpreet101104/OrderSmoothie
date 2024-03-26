@@ -1,0 +1,180 @@
+/* Resetting default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Styling the background image */
+.background-image {
+    background-image: url('S2.jpg'); /* Add the path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+/* Overlay for text content */
+.overlay {
+    background-color: rgba(211, 209, 209, 0.275); /* Background color with transparency */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* Styling for shop name */
+.shop-name {
+    font-size: 5em;
+    margin-bottom: 20px;
+    -webkit-text-stroke: 0.1px white; 
+    color: rgb(8, 8, 8); 
+    font-family: "Concert One", sans-serif;
+    margin-top: -12px; /* Adjust margin to lift the heading upwards */
+
+}
+/* Styling for tagline */
+.tagline {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+/* Styling for order now text */
+.order-now {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+/* Container for main content */
+.container {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #fef9ec;/* Fallback color */
+    border-radius: 10px;
+    box-shadow: 10PX 10px 10px rgba(0, 0, 0, 0.1);/* Adding a subtle shadow */
+    
+}
+/* Heading styles */
+h1 {
+    text-align: center;
+    color: #030303;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Label styles */
+label {
+    margin-right: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Button styles */
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dfe9df; /* Lighten the color on hover */
+}
+
+/* Styling for flavor options */
+.flavor-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* Styling for individual flavor options */
+.flavor-option {
+    flex: 0 0 30%; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding-top: 20PX;
+    font-size: 18px;
+}
+
+.flavor-option input[type="radio"] {
+    margin-right: 10px;
+}
+
+.flavor-option img {
+    width: 90px; 
+    height: auto;
+}
+
+
+#smoothie-form input[type="checkbox"] {
+    margin: 0 auto;
+}
+.extras-section,
+.toppings-section {
+    display: flex;
+    justify-content: space-between;
+}
+/* Styling for checkboxes */
+.checkbox-group {
+    flex: 1;
+    margin-right: 20px; /*  spacing between checkboxes */
+    font-size: 18px;
+}
+
+.checkbox-group:last-child {
+    margin-right: 0; 
+}
+
+#smoothie-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.center-label {
+    display: block;
+    text-align: center;
+    font-size: 1.5em; /* the font size as needed */
+    margin-bottom: 10px;
+    padding: 10px; /* padding added */
+}
+label[for="flavor"],
+label[for="extras"],
+label[for="toppings"] {
+    display: block;
+    text-align: center;
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    padding: 10px; /* Add padding */
+}
+/* Styling for submit button */
+button[type="submit"] {
+    display: block;
+    margin: 20px auto; /* Move the button to the center */
+    padding: 10px 20px; /* padding added */
+    background-color: #f3184b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #3e403e94;/* Darken the color on hover */
+    transform: scale(1.05);/* Added a slight scaling effect */
+}
+/* Styling for order button */
+.order-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px; /*padding added */
+    background-color: #d3d3d0a1;
+    color: rgb(17, 17, 17);
+    cursor: pointer;
+    font-size: 20px;
+}
+/* Footer styles */
+footer {
+    background-color: #f3184b89;/* put Semi-transparent pink background */
+    color: rgb(244, 239, 241);/* added White text color */
+    text-align: center;   
+}

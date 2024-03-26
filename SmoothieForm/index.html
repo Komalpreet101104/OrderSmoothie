@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Linking external fonts -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Concert+One&family=Dancing+Script&family=EB+Garamond&family=Emilys+Candy&family=Ephesis&family=Fira+Sans:ital@0;1&family=Montserrat:wght@200&family=Nabla&family=Neucha&family=Noto+Sans+Tai+Viet&family=Noto+Serif&family=Nunito&family=Nunito+Sans:opsz@6..12&family=Old+Standard+TT:wght@400;700&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,500;1,700;1,800&family=Quattrocento&family=Roboto:wght@400;500&family=Satisfy&family=Shadows+Into+Light&family=Signika+Negative&display=swap" rel="stylesheet">
+    <title>Smoothie Machine</title>
+    <!-- Linking external stylesheet -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background image section -->
+
+    <div class="background-image">
+        <div class="overlay">
+            <!-- Name of shop -->
+
+            <h1 class="shop-name">Smoothie Bash</h1>
+            <p class="tagline">"Savor the Taste of Freshness."</p>
+            <!-- Order button -->
+
+            <button class="order-button">ORDER BELOW</button>
+        </div>
+    </div>
+
+    <!-- Main content container -->
+    <div class="container">
+        <!-- Smoothie order form -->
+
+        <form id="smoothie-form">
+            <!-- Flavor selection -->
+
+            <label for="flavor">Select a flavor:</label>
+            <div class="flavor-options">
+                <!-- Individual flavor options -->
+                <div class="flavor-option">
+                    <input type="radio" id="strawberry" name="flavor" value="strawberry">
+                    <label for="strawberry"><img src="SS8.webp" alt="Strawberry Smoothie"> Strawberry</label>
+                </div>
+                <div class="flavor-option">
+                    <input type="radio" id="banana" name="flavor" value="banana">
+                    <label for="banana"><img src="SS2.jpg" alt="Banana Smoothie"> Banana</label>
+                </div>
+                <div class="flavor-option">
+                    <input type="radio" id="mango" name="flavor" value="mango">
+                    <label for="mango"><img src="SS3.jpg" alt="Mango Smoothie"> Mango</label>
+                </div>
+                <div class="flavor-option">
+                    <input type="radio" id="pineapple" name="flavor" value="pineapple">
+                    <label for="pineapple"><img src="SS9.jpg" alt="Pineapple Smoothie"> Pineapple</label>
+                </div>
+                <div class="flavor-option">
+                    <input type="radio" id="cherry" name="flavor" value="cherry">
+                    <label for="cherry"><img src="SS5.webp" alt="Cherry Smoothie"> Cherry</label>
+                </div>
+                <div class="flavor-option">
+                    <input type="radio" id="tropical" name="flavor" value="tropical">
+                    <label for="tropical"><img src="SS7.jpg" alt="Tropical Smoothie"> Tropical</label>
+                </div>
+            </div><br>
+
+            <!-- Extras selection -->
+
+            <label for="protein">Select extras:</label><br>
+            <div class="extras-section">
+                <!-- Checkbox groups for extras -->
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="protein" name="protein">
+                    <label for="protein">protein</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="spinach" name="spinach">
+                    <label for="spinach">Spinach</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="honey" name="honey">
+                    <label for="honey">Honey</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="avocado" name="avocado">
+                    <label for="avocado">Avocado</label>
+                </div>
+            </div>
+            <br>
+            <!-- Toppings selection -->
+
+            <label for="nuts">Select toppings:</label><br>
+            <div class="toppings-section">
+                <!-- Checkbox groups for toppings -->
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="nuts" name="toppings" value="nuts">
+                    <label for="nuts">Nuts</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="chocolate" name="toppings" value="chocolate">
+                    <label for="chocolate">Chocolate Chips</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="dried-fruits" name="toppings" value="dried-fruits">
+                    <label for="dried-fruits">Dried Fruits</label>
+                </div>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="coconut-flakes" name="toppings" value="coconut-flakes">
+                    <label for="coconut-flakes">Coconut Flakes</label>
+                </div>
+                
+            </div>
+            <!-- Submit button -->
+
+            <button type="submit">Order</button>
+        </form>
+        <!-- Smoothie output section -->
+
+        <div id="smoothie-output"></div>
+    </div>
+<!-- Footer section -->
+
+    <footer>
+        <p>&copy; 2024 Smoothie Bash. All rights reserved.</p>
+    </footer>
+<!-- Script -->
+
+    <script src="script.js"></script>
+</body>
+</html>
